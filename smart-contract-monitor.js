@@ -13,7 +13,7 @@ const settings = {
 
 async function getLogs(abiFilename){
 
-    const tokenContractABI = require("../ownytoken-abi.json");
+    const tokenContractABI = require("../${abiFilename}.json");
     const contractAddress = tokenContractABI.address;
 
     const filter = {
